@@ -1,0 +1,17 @@
+@use "../base/" as *;
+
+header {
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > h1 {
+    font-size: 1em;
+    padding: 1rem;
+    margin: 0;
+    color: $white;
+    text-align: left;
+    font-family: $font-primary;
+  }
+}

@@ -1,0 +1,49 @@
+@use "../base" as *;
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  background-color: $black;
+  border: none;
+  border-radius: 3.125rem;
+  padding: 0.9375rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  & .icon {
+    font-size: 7rem;
+  }
+
+  & .title {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background-color: #4d4d4d;
+    color: $yellow;
+  }
+
+  &:active {
+    background-color: $black;
+    transform: translateY(4px);
+  }
+}
+
+.active {
+  background-color: $black;
+  transform: translateY(4px);
+}

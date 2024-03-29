@@ -1,0 +1,28 @@
+@use "colors" as *;
+@use "typography" as *;
+
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  font-family: $font-primary;
+  color: $black;
+}
+
+*:focus {
+  outline: 0.25rem solid $hotpink;
+  box-shadow: 0 0 0 0.5rem $black;
+  color: $yellow;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: $font-secondary;
+  color: $black;
+  text-align: center;
+}
